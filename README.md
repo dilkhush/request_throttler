@@ -5,6 +5,13 @@ here is the gem to safe you from these kind of traffic. for example a hacker
 created a script to make 1 DOS attack to your site so you can save yourself 
 from that attack.
 
+## pre-requirement
+
+You should have redis gem in your gemfile redis up and running.
+you need to set a redis path in you initializers/request_throttler.rb
+
+    $ config.store = Redis.new(url: 'localhost:6379', namespace: 'request_throttler')
+
 ## Installation
 
 Add this line to your application's Gemfile:
