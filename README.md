@@ -36,6 +36,7 @@ To copy request throttler config file:
 create a method to use before filter for you all requests
 to check the threshold for you apis use this mehtod:
 
+    $ include RequestThrottler # in your applicatio controller
     $ threshold?(key) # true or false
 
 If its value true then take action. the key can be request user system ip or access_token
